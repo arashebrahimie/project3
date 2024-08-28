@@ -21,6 +21,7 @@ body {
 .wrapper {
     max-width: 1134px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -74,7 +75,7 @@ nav {
     position: fixed;
     width: 1134px;
     z-index: 100;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 nav .logo {
@@ -128,6 +129,7 @@ nav ul li a {
     line-height: 200%;
     color: white;
     margin-bottom: 30px;
+    width: 457px;
 }
 
 .hero-section .left {
@@ -136,11 +138,14 @@ nav ul li a {
 
 .hero-section .right {
     align-self: flex-end;
+
 }
 
 .hero-section .right img {
     height: 520px;
     vertical-align: middle;
+    padding-left: 20%;
+
 }
 
 /* achievement cards */
@@ -158,13 +163,14 @@ nav ul li a {
 }
 
 .achievement-cards.students-enrolled {
-    left: 47%;
-    top: 330px;
+    top: -95px;
+
 }
 
-.achievement-cards.Overall-Rating {
-    left: 45%;
-    top: 520px;
+.achievement-cards.Overall-rating {
+    top: 120px;
+    right: 1%;
+
 }
 
 
@@ -191,6 +197,7 @@ nav ul li a {
     color: var(--dark-blue-color);
     margin-top: -8px;
     margin-bottom: 8px;
+    white-space: nowrap;
 }
 
 .achievement-cards .bg {
@@ -203,4 +210,123 @@ nav ul li a {
     top: 8px;
     left: 8px;
     z-index: 1;
+}
+
+/*testimonial section */
+
+section {
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: "raleway", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color);
+}
+
+section p {
+    font-family: "poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--dark-blue-color);
+    margin: 12px 0;
+}
+
+.testimonial-section {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.testimonial-section .mobile-btn {
+    display: none;
+}
+
+.testimonial-section .testimonial-card {
+    width: 442px;
+    background: white;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.testimonial-section .testimonial-card::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 40px;
+    top: -40px;
+    left: 60px;
+    background: var(--dark-blue-color);
+    border-radius: 24px 24px 0 0;
+
+}
+
+.testimonial-section .testimonial-card:last-child:before {
+    left: 40px;
+    top: -50px;
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+}
+
+.testimonial-section .testimonial-card .content {
+    font-family: "raleway", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+    border-radius: 24px;
+    padding: 24px 32px;
+    background: var(--light-blue-color);
+}
+
+
+.testimonial-section .testimonial-card:last-child .content {
+    background: var(--orange-color);
+}
+
+.testimonial-section .testimonial-card .info h4 {
+    font-family: "raleway", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color);
+}
+
+.testimonial-section .testimonial-card .info {
+    padding: 24px 32px;
+    background: white;
+    border-radius: 24px;
+}
+
+
+.testimonial-section .testimonial-card .info p.company {
+    font-family: "raleway", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--dark-blue-color);
+}
+
+.testimonial-section .testimonial-card img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 32px;
+    bottom: 20px;
+}
+
+.testimonial-section .testimonial-card:last-child {
+    transform: translateX(20px);
+}
+
+.testimonial-section .features {
+    margin-bottom: 30px;
 }
